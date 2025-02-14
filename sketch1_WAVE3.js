@@ -1,5 +1,5 @@
 let myFont;
-let txt = "FUTURE";
+let txt = "WAVE";
 
 function preload() {
   myFont = loadFont('fonts/CODEBold.otf');
