@@ -2,7 +2,7 @@ let myFont;
 let txt = "FUTURE";
 
 function preload() {
-  myFont = loadFont('CODE Bold.otf');
+  myFont = loadFont('fonts/CODEBold.otf');
 }
 
 function setup() {
