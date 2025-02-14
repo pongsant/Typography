@@ -1,27 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experimental Typography</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
-    <script id="sketch-script" src="sketch1_word1.js" defer></script>
-</head>
-<body>
-    <button onclick="loadSketch('sketch1_word1.js')">Sketch 1 - Word 1</button>
-    <button onclick="loadSketch('sketch2_word1.js')">Sketch 2 - Word 1</button>
-    <button onclick="loadSketch('sketch3_word1.js')">Sketch 3 - Word 1</button>
-    <button onclick="loadSketch('sketch1_word2.js')">Sketch 1 - Word 2</button>
-    <button onclick="loadSketch('sketch2_word2.js')">Sketch 2 - Word 2</button>
-    <button onclick="loadSketch('sketch3_word2.js')">Sketch 3 - Word 2</button>
-    <button onclick="loadSketch('sketch1_word3.js')">Sketch 1 - Word 3</button>
-    <button onclick="loadSketch('sketch2_word3.js')">Sketch 2 - Word 3</button>
-    <button onclick="loadSketch('sketch3_word3.js')">Sketch 3 - Word 3</button>
 
-    <script>
-        function loadSketch(file) {
-            document.getElementById('sketch-script').src = file;
-        }
-    </script>
-</body>
+    <title>Sketch</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+  </head>
+
+  <body>
+    <script src="sketch.js"></script>
+  </body>
 </html>
