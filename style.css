@@ -6,68 +6,130 @@ html, body {
 canvas {
   display: block;
 }
+
 /* General Reset */
 html, body {
   margin: 0;
   padding: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: #121212; /* Dark mode background */
-  color: #ffffff;
-  text-align: center;
-}
-
-/* Center the Sketch Canvas */
-canvas {
-  display: block;
-  margin: auto;
-  border: 2px solid #333;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #111;
+  color: #fff;
+  text-align: left;
 }
 
 /* Header Styling */
 h1 {
-  font-size: 40px;
+  font-size: 80px;
+  font-weight: 900;
   text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-top: 30px;
-  color: #00ccff;
-  text-shadow: 2px 2px 10px rgba(0, 204, 255, 0.8);
+  letter-spacing: -2px;
+  margin: 50px;
 }
 
 h2 {
-  font-size: 28px;
-  margin-top: 30px;
-  color: #ffcc00;
-  text-shadow: 1px 1px 10px rgba(255, 204, 0, 0.8);
+  font-size: 24px;
+  font-weight: 600;
+  color: #888;
+  text-transform: uppercase;
+  margin: 50px;
 }
 
-/* Button Styling */
-button {
-  font-size: 18px;
-  padding: 12px 20px;
-  margin: 10px;
-  border: none;
-  border-radius: 8px;
-  background: linear-gradient(45deg, #00ccff, #ff33cc);
+/* Work List */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 50px;
+}
+
+li {
+  font-size: 70px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 15px 0;
+  position: relative;
+}
+
+li a {
+  text-decoration: none;
   color: white;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0px 4px 6px rgba(0, 204, 255, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: opacity 0.3s ease-in-out;
 }
 
-button:hover {
-  transform: scale(1.05);
-  background: linear-gradient(45deg, #ff33cc, #00ccff);
-  box-shadow: 0px 6px 12px rgba(255, 51, 204, 0.5);
+li a:hover {
+  opacity: 0.7;
 }
 
-/* Sketch Container */
+/* Sketch Container - Centers Only the Canvas */
 #sketch-container {
-  margin-top: 20px;
-  padding: 20px;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.1);
-  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh; /* Adjusts spacing while keeping content natural */
+}
+
+
+/* Work List */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 50px;
+}
+
+li {
+  font-size: 70px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 15px 0;
+  position: relative;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: opacity 0.3s ease-in-out;
+}
+
+li a:hover {
+  opacity: 0.7;
+}
+
+/* Arrow */
+li a::after {
+  content: "→";
+  font-size: 40px;
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+  color: #fff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  h1 {
+      font-size: 50px;
+      margin: 30px;
+  }
+
+  h2 {
+      font-size: 20px;
+      margin: 30px;
+  }
+
+  ul {
+      margin: 0 30px;
+  }
+
+  li {
+      font-size: 50px;
+  }
+
+  li a::after {
+      font-size: 30px;
+  }
 }
